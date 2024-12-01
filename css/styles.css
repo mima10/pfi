@@ -1,0 +1,253 @@
+*{
+    background-color: #bababa;
+}
+
+body, html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    grid-area: nav;
+    /*border: 1px solid black;*/
+    background-color: rgb(44, 43, 43);
+}
+header{
+    grid-area: header;
+    border: 1px solid black;
+}
+main{
+    grid-area: main;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+footer{
+    grid-area: footer;
+    border: 1px solid black;
+    background-color: black;
+}
+
+#conteneur{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-rows: 10% 80% 10%;
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+}
+
+
+.conteneurNave {
+    display: flex;
+    /*border: 1px solid black;*/
+    flex-direction: column;
+    border: none;
+    
+}
+.onglet{
+    /*border: 1px solid black;*/
+    flex-grow: 1;
+    text-align: center;
+    padding: 1em;
+    background-color: rgb(44, 43, 43);
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(44, 43, 43);
+    
+}  
+a:hover{
+    color:blue;
+}
+
+.conteneurFooter{
+    display: flex;
+    background-color: black;
+}
+.bass{
+    color: white;
+    margin: 10px;
+    margin-top: 2em;
+    background-color: black;
+}
+
+.lienBass{
+    background-color: black;
+    /*margin: 10px;*/
+    margin-top: 2em;
+}
+
+.conteneurCours{
+    display: grid;
+    grid-template-columns: 50px 50px;
+    grid-template-rows: 50px 50px 50px;
+    /*height: 100%;
+    width: 100%;*/
+    
+    border: 1px solid black;
+    grid-template-areas: 
+        "cour1 cour1"
+        "cour2 cour3"
+        "cour1 cour2";
+}
+
+.cour1{
+    grid-area: cour1;
+}
+
+.cour2{
+    grid-area: cour2;
+}
+.cour3{
+    grid-area: cour3;
+}
+/*---------------------Professions----------------*/
+
+.conteneurProfessions{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    grid-template-areas: 
+    "profession1 description1"
+    "profession2 description2"
+    "profession3 description3"
+    "profession4 description4"
+    "profession5 description5"
+    ;
+    background-color: #8a8a8a;
+}
+@media screen and (width < 800px){
+    .conteneurProfessions{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "profession1"
+        "description1"
+        "profession2"
+        "description2"
+        "profession3"
+        "description3"
+        "profession4"
+        "description4"
+        "profession5"
+        "description5"
+        ;
+        background-color: #8a8a8a;
+    }  
+    .professions1{
+        grid-area: profession1;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions2{
+        grid-area: profession2;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions3{
+        grid-area: profession3;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions4{
+        grid-area: profession4;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions5{
+        grid-area: profession5;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    
+}
+.professions1{
+    grid-area: profession1;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.professions2{
+    grid-area: profession2;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.professions3{
+    grid-area: profession3;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.professions4{
+    grid-area: profession4;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.professions5{
+    grid-area: profession5;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+
+.description1{
+    grid-area: description1;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.description2{
+    grid-area: description2;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.description3{
+    grid-area: description3;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.description4{
+    grid-area: description4;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.description5{
+    grid-area: description5;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+
+
+/*---------------------tableau----------------*/
+
+.introProg{
+
+}
+
+
+.philo{
+    
+}
+.nomCour{
+    font-weight: bold;
+}
+.codeCour{
+    font-style: italic;
+}
+.numéroLocal{
+
+}
+.nomProf{
+
+}
+
+.conteneur1Cour{
+    display: flex;
+}
