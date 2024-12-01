@@ -31,7 +31,7 @@ footer{
 
 #conteneur{
     display: grid;
-    grid-template-columns: minmax(75px, 15%) 85%;
+    grid-template-columns: minmax(80px, 15%) 85%;
     grid-template-rows: 10% 80% 10%;
     height: 100%;
     width: 100%;
@@ -184,6 +184,11 @@ a:hover{
         margin-top: 2em;
         background-color: black;
     }
+    img{
+        background-color: #8a8a8a;
+        float: left;
+        min-width: 100px;
+    }
 }
 .professions1{
     grid-area: profession1;
@@ -263,4 +268,29 @@ a:hover{
 
 .conteneur1Cour{
     display: flex;
+}
+
+.titre{
+    text-align: center;
+    margin: 0.5em;
+    font-size: 2em;
+}
+@media screen and (height < 650px){
+    .titre{
+        text-align: center;
+        margin: 0.25em;
+        font-size: 2em;
+    }
+}
+
+.sujet{
+    margin: 1em;
+    background-color: #8a8a8a;
+    
+}
+img{
+    background-color: #8a8a8a;
+    float: left;
+    max-width: 10%;
+    min-width: 100px;
 }
