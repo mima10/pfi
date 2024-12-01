@@ -178,6 +178,12 @@ a:hover{
         padding-left: 1px;
         background-color: rgb(44, 43, 43);
     }
+    .bass{
+        color: white;
+        margin: 5px;
+        margin-top: 2em;
+        background-color: black;
+    }
 }
 .professions1{
     grid-area: profession1;
