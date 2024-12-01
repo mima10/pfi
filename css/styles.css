@@ -60,7 +60,6 @@ footer{
 a{
     color: white;
     text-decoration: none;
-    text-align: center;
     background-color: rgb(44, 43, 43);
     
 }  
@@ -171,7 +170,14 @@ a:hover{
         background-color: #8a8a8a;
         text-align: center;
     }
-    
+    .onglet{
+        /*border: 1px solid black;*/
+        flex-grow: 1;
+        text-align: left;
+        padding: 1em;
+        padding-left: 1px;
+        background-color: rgb(44, 43, 43);
+    }
 }
 .professions1{
     grid-area: profession1;
