@@ -16,6 +16,10 @@ nav{
 header{
     grid-area: header;
     border: 1px solid black;
+    background-image:url('../images/gris texturer.jpg');
+    text-align: center;
+
+    font-size: 2em;
 }
 main{
     grid-area: main;
@@ -108,6 +112,24 @@ a:hover{
 .cour3{
     grid-area: cour3;
 }
+/*---------------------Page d'acceuille----------------------------*/
+.conteneurIndex{
+    background-color: #8a8a8a;
+}
+.acceuil{
+    background-color: #8a8a8a;
+    color: black;
+}
+li,ul{
+    background-color: #8a8a8a;
+}
+.imageAcceuil{
+    width: 200px; 
+    height: 200px;
+    border-radius: 100%; 
+    object-fit: cover;
+    float:right;
+}
 /*---------------------Professions----------------*/
 
 .conteneurProfessions{
@@ -121,74 +143,6 @@ a:hover{
     "profession5 description5"
     ;
     background-color: #8a8a8a;
-}
-@media screen and (width < 800px){
-    .conteneurProfessions{
-        display: grid;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-        "profession1"
-        "description1"
-        "profession2"
-        "description2"
-        "profession3"
-        "description3"
-        "profession4"
-        "description4"
-        "profession5"
-        "description5"
-        ;
-        background-color: #8a8a8a;
-    }  
-    .professions1{
-        grid-area: profession1;
-        margin: 10px;
-        background-color: #8a8a8a;
-        text-align: center;
-    }
-    .professions2{
-        grid-area: profession2;
-        margin: 10px;
-        background-color: #8a8a8a;
-        text-align: center;
-    }
-    .professions3{
-        grid-area: profession3;
-        margin: 10px;
-        background-color: #8a8a8a;
-        text-align: center;
-    }
-    .professions4{
-        grid-area: profession4;
-        margin: 10px;
-        background-color: #8a8a8a;
-        text-align: center;
-    }
-    .professions5{
-        grid-area: profession5;
-        margin: 10px;
-        background-color: #8a8a8a;
-        text-align: center;
-    }
-    .onglet{
-        /*border: 1px solid black;*/
-        flex-grow: 1;
-        text-align: left;
-        padding: 1em;
-        padding-left: 1px;
-        background-color: rgb(44, 43, 43);
-    }
-    .bass{
-        color: white;
-        margin: 5px;
-        margin-top: 2em;
-        background-color: black;
-    }
-    img{
-        background-color: #8a8a8a;
-        float: left;
-        min-width: 100px;
-    }
 }
 .professions1{
     grid-area: profession1;
@@ -270,16 +224,12 @@ a:hover{
     display: flex;
 }
 
-.titre{
-    text-align: center;
-    margin: 0.5em;
-    font-size: 2em;
-}
+
 @media screen and (height < 650px){
-    .titre{
+    herder{
+        background-image:url('../images/gris texturer.jpg');
         text-align: center;
-        margin: 0.25em;
-        font-size: 2em;
+
     }
 }
 
@@ -294,3 +244,191 @@ img{
     max-width: 10%;
     min-width: 100px;
 }
+
+/*----------------source----------*/
+
+.conteneurSource{
+    display: grid;
+    grid-template-columns: 15% 85%;
+    grid-template-areas: 
+    "nomSource1 source1"
+    "nomSource2 source2"
+    "nomSource3 source3"
+    "nomSource4 source4"
+    "nomSource5 source5"
+
+    ;
+    background-color: #8a8a8a;
+}
+.nomSource1{
+    grid-area: nomSource1;
+    margin: 10px;
+    background-color: #8a8a8a;
+    
+}
+.nomSource2{
+    grid-area: nomSource2;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource3{
+    grid-area: nomSource3;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource4{
+    grid-area: nomSource4;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource5{
+    grid-area: nomSource5;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+
+.source1{
+    grid-area: source1;
+    margin: 10px;
+    background-color: #8a8a8a;
+    color: black;
+}
+.source2{
+    grid-area: source2;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source3{
+    grid-area: source3;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source4{
+    grid-area: source4;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source5{
+    grid-area: source5;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+
+@media screen and (width < 800px){
+    .conteneurProfessions{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "profession1"
+        "description1"
+        "profession2"
+        "description2"
+        "profession3"
+        "description3"
+        "profession4"
+        "description4"
+        "profession5"
+        "description5"
+        ;
+        background-color: #8a8a8a;
+    }  
+    .professions1{
+        grid-area: profession1;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions2{
+        grid-area: profession2;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions3{
+        grid-area: profession3;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions4{
+        grid-area: profession4;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .professions5{
+        grid-area: profession5;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .onglet{
+        /*border: 1px solid black;*/
+        flex-grow: 1;
+        text-align: left;
+        padding: 1em;
+        padding-left: 1px;
+        background-color: rgb(44, 43, 43);
+    }
+    .bass{
+        color: white;
+        margin: 5px;
+        margin-top: 2em;
+        background-color: black;
+    }
+    img{
+        background-color: #8a8a8a;
+        float: left;
+        min-width: 100px;
+    }
+    .conteneurSource{
+        overflow: auto;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "nomSource1"
+        "source1"
+        "nomSource2"
+        "source2"
+        "nomSource3"
+        "source3"
+        "nomSource4"
+        "source4"
+        "nomSource5"
+        "source5"
+        ;
+        background-color: #8a8a8a;
+    }
+    .nomSource1{
+        grid-area: nomSource1;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+        
+    }
+    .nomSource2{
+        grid-area: nomSource2;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource3{
+        grid-area: nomSource3;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource4{
+        grid-area: nomSource4;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource5{
+        grid-area: nomSource5;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+}
+
