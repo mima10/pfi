@@ -7,7 +7,9 @@ body, html {
     display: flex;
     flex-direction: column;
 }
-
+div{
+    background-color: #8a8a8a;
+}
 nav{
     grid-area: nav;
     /*border: 1px solid black;*/
@@ -16,7 +18,7 @@ nav{
 header{
     grid-area: header;
     border: 1px solid black;
-    background-image:url('../images/gris texturer.jpg');
+    background-image:url('../images/grisTexturer.jpg');
     text-align: center;
 
     font-size: 2em;
@@ -88,30 +90,7 @@ a:hover{
     margin-top: 2em;
 }
 
-.conteneurCours{
-    display: grid;
-    grid-template-columns: 50px 50px;
-    grid-template-rows: 50px 50px 50px;
-    /*height: 100%;
-    width: 100%;*/
-    
-    border: 1px solid black;
-    grid-template-areas: 
-        "cour1 cour1"
-        "cour2 cour3"
-        "cour1 cour2";
-}
 
-.cour1{
-    grid-area: cour1;
-}
-
-.cour2{
-    grid-area: cour2;
-}
-.cour3{
-    grid-area: cour3;
-}
 /*---------------------Page d'acceuille----------------------------*/
 .conteneurIndex{
     background-color: #8a8a8a;
@@ -120,7 +99,7 @@ a:hover{
     background-color: #8a8a8a;
     color: black;
 }
-li,ul{
+li,ul, ol{
     background-color: #8a8a8a;
 }
 .imageAcceuil{
@@ -197,15 +176,137 @@ li,ul{
 }
 
 
-/*---------------------tableau----------------*/
 
-.introProg{
+.rigt{
+    float:right;
+}
+/*---------------------tableau----------------*/
+.conteneurCours{
+    display: grid;
+    grid-template-columns: 5% 19% 19% 19% 19% 19%;
+    background-color: #8a8a8a;
+    border: 1px solid black;
+    grid-template-areas: 
+        ".     lundi    mardi mercredi      jeudi       vendredi"
+        "temps .         .      francais    exp1        introProg3"
+        "temps .         .      francais    exp1        introProg3"
+        "temps introProg .      introProg1  aideFr      francais1"
+        "temps introProg math   introProg1  aideFr      francais1"
+        "temps .         math   .           aideFr      ."
+        "temps philo     .      .           .           math1"
+        "temps philo     exp    .           .           math1"
+        "temps philo     exp    .           introProg2  math1"
+        "temps philo     exp    concepWeb   introProg2  ."
+        "temps .         .      concepWeb   .           ."
+        "temps .         .      concepWeb   .           .";
+}
+.conteneur1Cour{
+    display: grid;
+    background-color: #8a8a8a;
+}
+.conteneurTemps{
+    display: flex;
+    flex-direction: column;
+    grid-area: temps;
+    border: 1px solid black;
+    background-color: #8a8a8a;
 
 }
-
-
+.temps{
+    border: 1px solid black;
+    background-color: #8a8a8a;
+    flex-grow: 1;
+}
+.lundi{
+    grid-area: lundi;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.mardi{
+    grid-area: mardi;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.mercredi{
+    grid-area: mercredi;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.jeudi{
+    grid-area: jeudi;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.vendredi{
+    grid-area: vendredi;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.introProg{
+    grid-area: introProg;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.introProg1{
+    grid-area: introProg1;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.introProg2{
+    grid-area: introProg2;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.introProg3{
+    grid-area: introProg3;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
 .philo{
-    
+    grid-area: philo;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.math{
+    grid-area: math;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.math1{
+    grid-area: math1;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.exploitation{
+    grid-area: exp;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.exploitation1{
+    grid-area: exp1;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.francais{
+    grid-area: francais;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.francais1{
+    grid-area: francais1;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+
+}
+.concepWeb{
+    grid-area: concepWeb;
+    border: 1px solid black;
+    background-color: #8a8a8a;
+}
+.aideFrancais{
+    grid-area: aideFr;
+    border: 1px solid black;
+    background-color: #8a8a8a;
 }
 .nomCour{
     font-weight: bold;
@@ -213,26 +314,18 @@ li,ul{
 .codeCour{
     font-style: italic;
 }
-.numéroLocal{
-
-}
-.nomProf{
-
-}
-
-.conteneur1Cour{
-    display: flex;
-}
-
 
 @media screen and (height < 650px){
     herder{
-        background-image:url('../images/gris texturer.jpg');
+        background-image:url('../images/grisTexturer.jpg');
         text-align: center;
 
     }
 }
 
+.cercleVide{
+    list-style:circle
+}
 .sujet{
     margin: 1em;
     background-color: #8a8a8a;
@@ -256,7 +349,10 @@ img{
     "nomSource3 source3"
     "nomSource4 source4"
     "nomSource5 source5"
-
+    "nomSource6 source6"
+    "nomSource7 source7"
+    "nomSource8 source8"
+    "nomSource9 source9"
     ;
     background-color: #8a8a8a;
 }
@@ -286,7 +382,26 @@ img{
     margin: 10px;
     background-color: #8a8a8a;
 }
-
+.nomSource6{
+    grid-area: nomSource6;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource7{
+    grid-area: nomSource7;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource8{
+    grid-area: nomSource8;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.nomSource9{
+    grid-area: nomSource9;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
 .source1{
     grid-area: source1;
     margin: 10px;
@@ -310,6 +425,26 @@ img{
 }
 .source5{
     grid-area: source5;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source6{
+    grid-area: source6;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source7{
+    grid-area: source7;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source8{
+    grid-area: source8;
+    margin: 10px;
+    background-color: #8a8a8a;
+}
+.source9{
+    grid-area: source9;
     margin: 10px;
     background-color: #8a8a8a;
 }
@@ -396,6 +531,15 @@ img{
         "source4"
         "nomSource5"
         "source5"
+        "nomSource6"
+        "source6"
+        "nomSource7"
+        "source7"
+        "nomSource8"
+        "source8"
+        "nomSource9"
+        "source9"
+
         ;
         background-color: #8a8a8a;
     }
@@ -426,6 +570,30 @@ img{
     }
     .nomSource5{
         grid-area: nomSource5;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource6{
+        grid-area: nomSource6;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource7{
+        grid-area: nomSource7;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource8{
+        grid-area: nomSource8;
+        margin: 10px;
+        background-color: #8a8a8a;
+        text-align: center;
+    }
+    .nomSource9{
+        grid-area: nomSource9;
         margin: 10px;
         background-color: #8a8a8a;
         text-align: center;
